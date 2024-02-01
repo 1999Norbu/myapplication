@@ -3,7 +3,7 @@ const fs = require('fs');
 const PORT = process.env.PORT;
 
 
-const handle = (FileName, statustCode, req, res) => {
+const handle = (FileName, statusCode, req, res) => {
     fs.readFile(FileName, "utf-8",
     (err, data) => { 
         if (err){
